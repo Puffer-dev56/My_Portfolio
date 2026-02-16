@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B");
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    font-family: "Bungee", sans-serif;
+    background: #33A1E0;
+}
+.header{
+    padding: 0.5rem 0rem 0.5rem 0.5rem;
+    display: grid;
+    grid-template: "logo nav" 1fr
+    /1fr 4fr;
+    font-size: 1.25rem;
+}
+nav div{
+    grid-area: logo;
+}
+.header nav{   
+    grid-area: nav;
+    display: flex;
+    justify-content: right;
+}
+.header nav div{
+    margin-right: 2.5rem;
+}
+.header nav div a{
+    color: black;
+    text-decoration: none;
+}
+.header nav div a:hover{
+    color: #e8dd06;
+}
+.info{
+    display: grid;
+    grid-template:"profile info" 1fr / 1fr 1fr;
+    height: 100vh-2.5rem;
+}
+.info .profile{
+    grid-area: profile;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 5rem;
+}
+.info .secsion{
+    grid-area: info;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+h1{
+    font-size: 4.5rem;
+    margin-top: -1.75rem;
+    font-weight: bolder;
+    font-family: "Poppins";
+}
+h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: "Poppins";
+    border-top: solid;
+    margin-bottom: -0.15rem;
+}
+.color{
+    color: #e8dd06;
+    border-top: none;
+    margin-bottom: -1rem;
+}
