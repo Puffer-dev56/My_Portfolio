@@ -22,6 +22,10 @@ html{
     width: 100%;
     border-radius: 0px 0px 10px 10px;
 }
+.header .logo a{
+    text-decoration: none;
+    color: black;
+} 
 nav div{
     grid-area: logo;
 }
@@ -106,7 +110,7 @@ nav div{
     grid-template: "inf sec" 1fr/1.5fr 1fr;
 }
 .Skill_Sec{
-    border-left: solid;
+    border-left: solid 0.2rem;
     grid-area: sec;
     background: #FFF7CD;
     display: flex;
@@ -123,11 +127,13 @@ nav div{
     flex-direction: column;
     background: #FFF7CD;
     padding-left: 0.5rem;
+    box-shadow: #262626 0.3rem 1.55rem 2rem;
 }
 .Skill_inf h1{
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: bolder;
     font-family: "Poppins";
-    margin: 0rem 0rem 0.75rem -2.5rem;
+    margin: 0rem 0rem 0.4rem -2.5rem;
     background: #FFF7CD;
 }
 .Skill_inf ul{
@@ -138,8 +144,9 @@ nav div{
     background-color: #FFF7CD;
 }
 .Skill_inf li{
-    margin: 0.5rem 0rem 0rem 0rem;
+    margin: 0.75rem 0rem 0rem 0.5rem;
     font-family: "Poppins";
+    font-size: 1.15rem;
     font-weight: 450;
 }
 .codding{
