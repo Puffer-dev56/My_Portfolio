@@ -6,12 +6,21 @@
     font-family: "Bungee", sans-serif;
     background: #33A1E0;
 }
+html{
+    scroll-behavior: smooth;
+}
+.body{
+    padding: 0%;
+}
 .header{
     padding: 0.5rem 0rem 0.5rem 0.5rem;
     display: grid;
     grid-template: "logo nav" 1fr
     /1fr 4fr;
     font-size: 1.25rem;
+    position: fixed;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
 }
 nav div{
     grid-area: logo;
@@ -35,7 +44,7 @@ nav div{
 .info{
     display: grid;
     grid-template:"profile info" 1fr / 1fr 1fr;
-    height: 100vh-2.5rem;
+    height: 100vh;
 }
 .info .profile{
     grid-area: profile;
@@ -50,21 +59,22 @@ nav div{
     align-items: center;
     justify-content: left;
 }
-h1{
+.container h1{
     font-size: 4.5rem;
     margin-top: -1.75rem;
     font-weight: bolder;
     font-family: "Poppins";
 }
-h2{
+.text h2{
     font-size: 1.2rem;
     font-weight: 400;
     font-family: "Poppins";
     border-top: solid;
     margin-bottom: -0.15rem;
 }
-h2.color{
+.text h2.color{
     padding-left: 1.5rem;
+    border: none 0rem;
 }
 .contact{
     display: flex;
@@ -73,20 +83,70 @@ h2.color{
     border-left: solid;
     margin: 2.25rem 0rem 0rem 5.5rem;
 }
-a img{
+.contact a img{
     width: 2.75rem;
-    padding: 0rem;
     border: solid #000 0.15rem;
     padding: 0.1rem;
     border-radius: 50%;
-    transition: all 0.3s ease-in;
+    transition: all 0.15s ease-in;
 }
-a img:hover{
+.contact a img:hover{
     box-shadow: #BFC9D1 0.1rem 0.1rem 0.5rem 0.2rem,
     #BFC9D1 -0.1rem -0.1rem 0.5rem 0.2rem;
+    transform: scale(1.15,1.15);
 }
-.color{
+.text .color{
     color: #e8dd06;
     border-top: none;
     margin-bottom: -1rem;
+}
+.Skill{
+    height: 100vh;
+    display: grid;
+    grid-template: "inf sec" 1fr/1.5fr 1fr;
+}
+.Skill_Sec{
+    border-left: solid;
+    grid-area: sec;
+    background: #FFF7CD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Skill_Sec h1{
+    background: #FFF7CD;
+    font-size: 4rem;
+}
+.Skill_inf{
+    grid-area: inf;
+    display: flex;
+    flex-direction: column;
+    background: #FFF7CD;
+    padding-left: 0.5rem;
+}
+.Skill_inf h1{
+    font-size: 2rem;
+    font-family: "Poppins";
+    margin: 0rem 0rem 0.75rem -2.5rem;
+    background: #FFF7CD;
+}
+.Skill_inf ul{
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+.Skill_inf ul,li{
+    background-color: #FFF7CD;
+}
+.Skill_inf li{
+    margin: 0.5rem 0rem 0rem 0rem;
+    font-family: "Poppins";
+    font-weight: 450;
+}
+.codding{
+    background: #FFF7CD;
+    margin-top: 2.25rem;
+}
+.Language{
+    background: #FFF7CD;
+    margin-top: 0.45rem;
 }
