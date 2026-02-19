@@ -169,12 +169,12 @@ nav div{
 .About_inf .intro{
     grid-area: intro;
     background: #FFF7CD;
-    margin-top: 2.25rem;
+    margin-top: 2.45rem;
 }
 .About_inf .edu{
     grid-area: edu;
     background: #FFF7CD;
-    margin-top: 0.45rem;
+    margin-top: 3.25rem;
 }
 .Skill{
     height: 100vh;
@@ -223,7 +223,7 @@ nav div{
 }
 .codding{
     background: #FFF7CD;
-    margin-top: 2.25rem;
+    margin-top: 2.45rem;
 }
 .Language{
     background: #FFF7CD;
