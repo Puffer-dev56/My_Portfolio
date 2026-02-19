@@ -9,9 +9,6 @@
 html{
     scroll-behavior: smooth;
 }
-.body{
-    padding: 0%;
-}
 .header{
     padding: 0.5rem 0rem 0.5rem 0.5rem;
     display: grid;
@@ -104,13 +101,89 @@ nav div{
     border-top: none;
     margin-bottom: -1rem;
 }
+.About{
+    background: #FFF7CD;
+    height: 100vh;
+    display: grid;
+    grid-template: "Sec inf" 1fr/1fr 1.5fr;
+    border-top: solid;
+}
+.About_Sec{
+    grid-area: Sec;
+    background: #FFF7CD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: solid;
+}
+.About_Sec h1{
+    background: #FFF7CD;
+    font-size: 4rem;
+}
+.About_inf ul{
+    list-style: none;
+}
+.About_inf ul, .About_inf li, .About_inf h1{
+    background: #FFF7CD;
+}
+.About_inf h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family: "Poppins";
+    margin: 0rem 0rem 0.4rem -2.5rem;
+    background: #FFF7CD;
+}
+.About_inf{
+    grid-area: inf;
+    display: grid;
+    grid-template:"intro img" 0fr
+    "edu edu"0fr/1fr 1fr ;
+    flex-direction: column;
+    background: #FFF7CD;
+    padding-left: 0.5rem;
+}
+.About ul{
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+.About_inf li{
+    margin: 0.75rem 0rem 0rem 0.5rem;
+    font-family: "Poppins";
+    font-size: 1.15rem;
+    font-weight: 450;
+}
+.About_inf .My_img{
+    grid-area: img;
+    background: #FFF7CD;
+    margin-top: 5.5rem;
+    margin-right: 7rem;
+    justify-self: right;
+}
+.About .My_img img{
+    border-radius: 50%;
+    border: solid 0.4rem;
+}
+.edu ul{
+    list-style: disc;
+}
+.About_inf .intro{
+    grid-area: intro;
+    background: #FFF7CD;
+    margin-top: 2.25rem;
+}
+.About_inf .edu{
+    grid-area: edu;
+    background: #FFF7CD;
+    margin-top: 0.45rem;
+}
 .Skill{
     height: 100vh;
     display: grid;
     grid-template: "inf sec" 1fr/1.5fr 1fr;
+    border-top: solid;
 }
 .Skill_Sec{
-    border-left: solid 0.2rem;
+    border-left: solid;
     grid-area: sec;
     background: #FFF7CD;
     display: flex;
@@ -127,7 +200,6 @@ nav div{
     flex-direction: column;
     background: #FFF7CD;
     padding-left: 0.5rem;
-    box-shadow: #262626 0.3rem 1.55rem 2rem;
 }
 .Skill_inf h1{
     font-size: 2.5rem;
